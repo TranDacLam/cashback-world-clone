@@ -10405,7 +10405,7 @@ dt {
 #navbar-main .mega-menu-content {
   overflow-x: hidden;
   width: 100%;
-  height: 320px;
+  height: 330px;
   position: absolute;
   background-color: #fff;
   box-shadow: 0 13px 8px -5px rgba(5, 8, 12, 0.15);
@@ -50495,3 +50495,27 @@ iframe#_hjRemoteVarsFrame {
   display: none; }
   #website-container.website-container-active {
     display: block; }
+
+.form-register {
+  max-width: 480px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .form-register .reg-control-label {
+    margin-top: 18px;
+    margin-bottom: 5px; }
+    .form-register .reg-control-label label {
+      font-size: 16px; }
+  .form-register .reg-button {
+    margin-top: 30px; }
+  .form-register .form-register__password, .form-register .form-register__confirm-password {
+    position: relative; }
+    .form-register .form-register__password-icon-1, .form-register .form-register__password-icon-2, .form-register .form-register__confirm-password-icon-1, .form-register .form-register__confirm-password-icon-2 {
+      position: absolute;
+      right: 15px;
+      top: 0;
+      bottom: 0;
+      width: 20px;
+      margin: auto;
+      height: 20px;
+      cursor: pointer; }
