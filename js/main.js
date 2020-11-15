@@ -28,19 +28,26 @@ $(document).ready(function() {
 		})
 		.resize();
 
-	$('#btnRegisterNow').on('click', function(e){
+	$('.btn-register-now').on('click', function(e){
 		e.preventDefault();
-		if (!$(this).hasClass("open")) {
-			$('#form-register').slideDown(300);
-			$(this).addClass("open");
-			$([document.documentElement, document.body]).animate({
-				scrollTop: $(this).offset().top - 80
-			}, 1000);
-		} else {
-			$(this).removeClass("open");
-			$('#form-register').slideUp(300);
-		}
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $('#form-register').offset().top - 80
+		}, 1000);
 	})
+
+	// $('#btnRegisterNow').on('click', function(e){
+	// 	e.preventDefault();
+	// 	if (!$(this).hasClass("open")) {
+	// 		$('#form-register').slideDown(300);
+	// 		$(this).addClass("open");
+	// 		$([document.documentElement, document.body]).animate({
+	// 			scrollTop: $(this).offset().top - 80
+	// 		}, 1000);
+	// 	} else {
+	// 		$(this).removeClass("open");
+	// 		$('#form-register').slideUp(300);
+	// 	}
+	// })
 
 	$('.form-register__password .form-register__password-icon-1').on('click', function(e){
 		$(this).css({'display': 'none'})
